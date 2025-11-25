@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LabVenture - Activity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">LabVenture 🧪</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="deepdive.html">Deep Dive</a></li> 
+        <li><a href="experiments.html">Experiments</a></li>
+        <li><a href="activity.html" class="active">Activity</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Try It Yourself!</h2>
+    <p>Test your knowledge with quick interactive quizzes. Click an option below to answer.</p>
+
+    <!-- Quiz 1 -->
+    <div class="quiz">
+      <p>Question 1: Why does ice float on water?</p>
+      <button onclick="checkAnswer('correct', 1)">Because it is less dense</button>
+      <button onclick="checkAnswer('wrong', 1)">Because it is heavier</button>
+      <button onclick="checkAnswer('wrong', 1)">Because it melts</button>
+      <div class="result" id="result1"></div>
+    </div>
+
+    <!-- Quiz 2 -->
+    <div class="quiz">
+      <p>Question 2: What is needed to make Elephant Toothpaste?</p>
+      <button onclick="checkAnswer('correct', 2)">Hydrogen peroxide, soap, catalyst</button>
+      <button onclick="checkAnswer('wrong', 2)">Sugar and water</button>
+      <button onclick="checkAnswer('wrong', 2)">Flour and vinegar</button>
+      <div class="result" id="result2"></div>
+    </div>
+
+    <!-- Quiz 3 -->
+    <div class="quiz">
+      <p>Question 3: Which is a top note in perfumes?</p>
+      <button onclick="checkAnswer('correct', 3)">Citrus</button>
+      <button onclick="checkAnswer('wrong', 3)">Vanilla base</button>
+      <button onclick="checkAnswer('wrong', 3)">Musk base</button>
+      <div class="result" id="result3"></div>
+    </div>
+  </section>
+
+
+  <!--perfume activity -->
+
+ <section class="perfume-activity">
+  <h2>Fun Interactive Activity: Mix Your Own Perfume!</h2>
+  <p>Drag the ingredients into the bottle or tap on them to create your fragrance!</p>
+
+ <div class="ingredients">
+  <div class="ingredient-item">
+    <img src="images/citrus.png" class="item" id="citrus" draggable="true" alt="Citrus">
+    <p class="ingredient-name">Citrus</p>
+  </div>
+  <div class="ingredient-item">
+    <img src="images/flower.png" class="item" id="flower" draggable="true" alt="Flower">
+    <p class="ingredient-name">Flower</p>
+  </div>
+  <div class="ingredient-item">
+    <img src="images/woods.png" class="item" id="Woods" draggable="true" alt="Woods">
+    <p class="ingredient-name">Woods</p>
+  </div>
+</div>
+
+  <div class="bottle" id="bottle">
+    <p>Drop ingredients here</p>
+  </div>
+
+  <div class="controls">
+    <button id="doneBtn">Done</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <div id="perfumeResult" class="result"></div>
+
+  <!-- Magical sound -->
+  <audio id="magicAudio" src="magic-sound.mp3"></audio>
+</section>
+
+
+  <footer>
+    <p>© 2025 LabVenture | Created by Wafeeka</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

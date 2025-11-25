@@ -1,0 +1,280 @@
+/* GENERAL RESET */
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif; /*stated multiple fonts (font stack) so that the font will look good across all devices*/
+}
+body { 
+  background-color:#ead3f4; 
+  color:#333; 
+  line-height:1.6; 
+  font-size:16px;
+}
+
+/* Greetings in home page*/
+#greeting {
+  font-size: 1.2rem;
+  color: #264653;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+/* HEADER / NAV */
+header { 
+  background-color:#125850; 
+  color:#fff; 
+  padding:15px 30px; 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  flex-wrap:wrap;
+}
+header .logo { 
+  font-size:1.8rem; 
+  font-weight:bold;
+}
+nav ul { 
+  list-style:none; 
+  display:flex; 
+  gap:20px;
+}
+nav ul li a { 
+  text-decoration:none; 
+  color:#fff; 
+  padding:8px 12px; 
+  border-radius:5px; 
+  transition:background 0.3s;
+}
+nav ul li a:hover, nav ul li a.active { 
+  background-color:#cca4dd; 
+  color:#000;
+}
+
+/* HERO */
+.hero { 
+  background:linear-gradient(to right,#7fecdf,#264653); 
+  color:#fff; 
+  padding:80px 30px; 
+  text-align:center;
+}
+.hero h2 { 
+  font-size:2.5rem; 
+  margin-bottom:20px;
+}
+.hero p { 
+  font-size:1.2rem; 
+  margin-bottom:30px;
+}
+.explore-btn { 
+  padding:12px 40px; 
+  font-size:1rem; 
+  background-color:#cca4dd; 
+  border:none; 
+  border-radius:25px; 
+  cursor:pointer; 
+  transition:background 0.3s;
+  margin-top: 20px; /* <-- adds space above the button */
+}
+.explore-btn:hover { 
+  background-color:#eaef90;
+}
+
+/* for the introduction video */
+.sneak-video {
+  width: 100%;          /* full width of container */
+  max-width: 600px;     
+  border-radius: 10px;  /* rounded corners */
+  display: block;       
+  margin: 0 auto;       /* centers video in container */
+}
+
+
+
+/* SECTIONS */
+section { 
+  padding:50px 30px; 
+  max-width:1000px; 
+  margin:auto;
+}
+section h2 { 
+  font-size:2rem; 
+  margin-bottom:20px; 
+  color:#264653;
+}
+section p, section li { 
+  font-size:1rem; 
+  margin-bottom:15px;
+}
+ul { 
+  padding-left:20px;
+}
+li { 
+  margin-bottom:10px;
+}
+article { 
+  margin-bottom:30px; 
+  padding:15px; 
+  background-color:#e0f2f1; 
+  border-left:5px solid #2a9d8f; 
+  border-radius:5px;
+}
+
+/* EXPERIMENTS 3-BOX ROW */
+.experiment-row { 
+  display:flex; 
+  gap:20px; 
+  flex-wrap:wrap; 
+  justify-content:center;
+}
+.experiment-box { 
+  background-color:#e0f2f1; 
+  padding:15px; 
+  border-radius:10px; 
+  text-align:center; 
+  max-width:300px; 
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+.experiment-box img { 
+  width:100%; 
+  height:auto; 
+  border-radius:10px; 
+  margin-bottom:10px;
+}
+
+/* QUIZ */
+.quiz button { 
+  margin:5px 10px 10px 0; 
+  padding:8px 15px; 
+  border:none; 
+  border-radius:5px; 
+  background-color:#4f123b; 
+  color:#fff; 
+  cursor:pointer; 
+  transition:background 0.3s;
+}
+.quiz button:hover { 
+  background-color:#edf1a5; 
+  color:#000;
+}
+.result { 
+  margin-top:15px; 
+  font-weight:bold; 
+  font-size:1.1rem;
+}
+
+/* PERFUME ACTIVITY */
+.perfume-activity { 
+  margin-top:40px; 
+  background-color:#f4e6ff; 
+  padding:20px; 
+  border-radius:15px; 
+  text-align:center; 
+  position: relative;
+}
+.ingredients { 
+  display:flex; 
+  justify-content:center; 
+  gap:15px; 
+  flex-wrap:wrap; 
+  margin-bottom:20px;
+}
+.ingredients img.item { 
+  width:60px; 
+  cursor:grab; 
+  transition: transform 0.2s;
+}
+.ingredients img.item:active { 
+  transform: scale(1.1); 
+  cursor:grabbing;
+}
+
+.ingredient-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingredient-name {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #000000;
+  text-align: center;
+}
+
+
+.bottle { 
+  width:200px; 
+  height:250px; 
+  border:3px solid #3e0327; 
+  border-radius:15px; 
+  margin:20px auto; 
+  padding:10px; 
+  display:flex; 
+  flex-wrap: wrap; 
+  align-items:center; 
+  justify-content:center; 
+  background:#e0f2f1; 
+  transition: background 0.3s ease;
+  position: relative;
+}
+.bottle p { 
+  text-align:center; 
+  color:#555;
+}
+#perfumeResult { 
+  font-weight:bold; 
+  margin-top:15px; 
+  color:#0b5345;
+}
+.controls button { 
+  margin:10px 10px 0 10px; 
+  padding:8px 15px; 
+  background-color:#3b052c; 
+  color:white; 
+  border:none; 
+  border-radius:8px; 
+  cursor:pointer; 
+  font-weight:bold;
+  transition: background 0.3s;
+}
+.controls button:hover { 
+  background-color:#45a049;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+  .bottle { width:150px; height:200px; }
+  .ingredients img.item { width:50px; }
+  .experiment-row{flex-direction:column; align-items:center;}
+  .hero h2{font-size:2rem;}
+  .hero p{font-size:1rem;}
+}
+
+/* RESET BUTTON */
+#resetBtn { 
+  display:block; 
+  margin:15px auto; 
+  padding:8px 15px; 
+  background-color:#36052d; 
+  color:white; 
+  border:none; 
+  border-radius:8px; 
+  cursor:pointer; 
+  font-weight:bold;
+}
+#resetBtn:hover { 
+  background-color:#b70000;
+}
+
+/* FOOTER */
+footer { 
+  background-color:#125850; 
+  color:#fff; 
+  text-align:center; 
+  padding:20px 0; 
+  margin-top:50px;
+}
